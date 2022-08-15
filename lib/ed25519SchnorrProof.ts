@@ -20,16 +20,19 @@ export class Ed25519SchnorrProof {
     }
 
     public static async prove(sk: BN): Promise<Ed25519SchnorrProof> {
+        // @ts-ignore
         let sp = await SchnorrProof.prove(sk, Ed25519.g, Ed25519.curve.n)
         return new Ed25519SchnorrProof(sp.pk, sp.g_r, sp.res)
     }
 
     public static proveWithR(sk: BN, r_lt_CurveN: BN): Ed25519SchnorrProof {
+        // @ts-ignore
         let sp = SchnorrProof.proveWithR(sk, r_lt_CurveN, Ed25519.g, Ed25519.curve.n)
         return new Ed25519SchnorrProof(sp.pk, sp.g_r, sp.res)
     }
 
     public verify(): boolean{
+        // @ts-ignore
         return new SchnorrProof(this.pk, this.g_r, this.res, Ed25519.g, Ed25519.curve.n).verify()
     }
 }

@@ -107,6 +107,7 @@ export class HEGProof{
 
         // z1 = s1 + x * e
         let z1 = s1;
+        // @ts-ignore
         if (witness.x != 0){
             z1 = s1.add(witness.x.mul(e));
         }

@@ -21,6 +21,5 @@ describe('zkp ', function () {
         console.time("PailProof.verify")
         console.assert(proof.verify(pailPub, index, point.getX(), point.getY()))
         console.timeEnd("PailProof.verify")
-        this.timeout(10000)
     })
 })

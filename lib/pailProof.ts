@@ -1,7 +1,6 @@
 import * as BN from "bn.js"
-import {Rand} from '@safeheron/crypto-rand'
 import * as cryptoJS from "crypto-js"
-import {Hex, CryptoJSBytes} from "@safeheron/crypto-utils"
+import {Hex} from "@safeheron/crypto-utils"
 import {PailPrivKey, PailPubKey} from "@safeheron/crypto-paillier"
 import * as assert from "assert";
 
