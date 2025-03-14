@@ -1,7 +1,7 @@
 import BN = require('bn.js');
-import {Rand} from '@safeheron/crypto-rand'
+import {Rand} from '@thepulsewallet/crypto-rand'
 import {PailProof} from ".."
-import {createPailKeyPair} from "@safeheron/crypto-paillier";
+import {createPailKeyPair} from "@thepulsewallet/crypto-paillier";
 import * as assert from "assert";
 import elliptic = require('elliptic');
 const Secp256k1 = new elliptic.ec('secp256k1');

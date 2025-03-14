@@ -1,5 +1,5 @@
 import BN = require('bn.js');
-import {Rand} from '@safeheron/crypto-rand'
+import {Rand} from '@thepulsewallet/crypto-rand'
 import {Ed25519SchnorrProof, Secp256k1SchnorrProof, HomoElGamalWitness, HomoElGamalStatement, HEGProof} from ".."
 import elliptic = require('elliptic');
 import * as assert from "assert";

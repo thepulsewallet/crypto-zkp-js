@@ -1,5 +1,5 @@
 {
-  "name": "@safeheron/crypto-zkp",
+  "name": "@thepulsewallet/crypto-zkp",
   "version": "1.0.0",
   "description": "Zero knowledge proof",
   "keywords": [
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:safeheron/crypto-zkp-js"
+    "url": "git@github.com:thepulsewallet/crypto-zkp-js.git"
   },
   "author": "Max<hejh1500@gmail.com>",
   "files": [
@@ -42,8 +42,8 @@
     "typescript": "^4.0.5"
   },
   "dependencies": {
-    "@safeheron/crypto-paillier": "^1.0.0",
-    "@safeheron/crypto-rand": "^1.0.0",
+    "@thepulsewallet/crypto-paillier": "^1.0.0",
+    "@thepulsewallet/crypto-rand": "^1.0.0",
     "@safeheron/crypto-utils": "^1.0.1",
     "bn.js": "^5.2.1",
     "crypto-js": "3.3.0",
@@ -54,5 +54,8 @@
     "env": [
       "mocha"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

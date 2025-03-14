@@ -1,5 +1,5 @@
 import * as BN from "bn.js"
-import {Rand} from '@safeheron/crypto-rand'
+import {Rand} from '@thepulsewallet/crypto-rand'
 import * as cryptoJS from "crypto-js"
 import {Hex} from "@safeheron/crypto-utils";
 

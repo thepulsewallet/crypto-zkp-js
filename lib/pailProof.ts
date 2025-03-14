@@ -1,7 +1,7 @@
 import * as BN from "bn.js"
 import * as cryptoJS from "crypto-js"
 import {Hex} from "@safeheron/crypto-utils"
-import {PailPrivKey, PailPubKey} from "@safeheron/crypto-paillier"
+import {PailPrivKey, PailPubKey} from "@thepulsewallet/crypto-paillier"
 import * as assert from "assert";
 
 type TCurve = any
